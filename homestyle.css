@@ -1,0 +1,113 @@
+body {
+    font-family: 'Rubik';
+    background-color: black;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Rubik";
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: transparent;
+}
+  
+li a {
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: white;
+    color: Black; 
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* CLASSES */
+
+.background-image {
+    position: fixed;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    left: -1px;
+    top: -1px;
+    background-repeat: none;
+    background-size: cover;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    background-image: url('bgfuzz.gif')
+}
+
+.active {
+    background-color: rgb(255, 255, 255);
+    color: white;
+}
+
+.homelogo {
+    position: relative;
+    max-width: 100px;
+    max-height: 100px;
+    filter: invert(100%);
+    animation-name: logo-into;
+    animation-duration: .7s;
+}
+
+.navbar {
+    animation-name: nav-into;
+    animation-duration: .7s;
+    position: relative;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: hidden;
+    padding: 10px;
+}
+
+/* IDs */
+
+/*MEDIA QUERIES: Can help control responsiveness using CSS. The examples below illustrate
+how media queries can alter content according to window size.*/
+
+@media all and (max-width: 500px) {
+    /* PLACEHOLDER TEXT */
+}
+
+@media (orientation: portrait) {
+    /* PLACEHOLDER TEXT */
+}
+
+@media (orientation: landscape) {
+    /* PLACEHOLDER TEXT */
+}
+
+/*ANIMATIONS*/
+
+@keyframes logo-into {
+    0%  {left: -500px; top: -500px;}
+    100%    {left: 0px; top: 0px;}
+}
+
+@keyframes nav-into {
+    0%  {left: -500px; top: -500px; color: transparent; background-color: transparent;}
+    100%    {left: 0px; top: 0px;}
+}
+
+@keyframes bgLoad {
+    0% {background-image: url('bgfuzz.gif'); opacity: 0%;}
+    100% {background-image: url('bgfuzz.gif'); opacity: 100%;}
+}

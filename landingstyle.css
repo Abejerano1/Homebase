@@ -1,0 +1,36 @@
+body {
+    font-family: 'Rubik';
+    background-color: black;
+    width: 100%;
+}
+
+/*//////CLASSES//////*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.background-image {
+    position: fixed;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    left: -1px;
+    top: -1px;
+    background-repeat: none;
+    background-size: cover;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    background-image: url('bgfuzz.gif')
+}
+
+/*/////ANIMATIONS/////*/
+
+@keyframes fadeIn {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
